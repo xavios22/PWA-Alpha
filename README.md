@@ -80,7 +80,7 @@ Safari se sert principalement des balises pour pallier sa “discutable” gesti
 
 ##### La creation d'un fichier  manifest.json se fait  à la racine de notre projet,   de dans on a besoin juste des information ci dessous  et importer le link dans notre index.html
 
-    <link  rel="manifest"  href="./manifest.json">
+   ```html  <link  rel="manifest"  href="./manifest.json">```
 
 
 ## 2. Création d'un fichier sw.js
@@ -101,10 +101,8 @@ Avant d'utiliser un Service Worker, il faut le faire enregistrer par l'applicati
 ```js
 
  if ('serviceWorker'  in  navigator){
-
-window.addEventListener('load', () => {
-
-navigator.serviceWorker.register("./sw.js")
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register("./sw.js")
 
 .then(registration  => {
 
@@ -127,6 +125,6 @@ registration.scope
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwNzY3NzkxLC0xNzI2ODExNTgxLDMyMj
-MwMDEyOV19
+eyJoaXN0b3J5IjpbLTEwOTU0Mjk0NTIsLTE3MjY4MTE1ODEsMz
+IyMzAwMTI5XX0=
 -->
