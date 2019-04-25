@@ -93,9 +93,40 @@ Safari se sert principalement des balises pour pallier sa “discutable” gesti
 
 ![enter image description here](https://lh3.googleusercontent.com/KxlLmQK_2T-Oo1rSMKCq9IWAWvdqEtImdAiAh48l6uSlAiwsZh0SdUK6o-q_cQvoLlBVSO_WohYb)
 
-### Fichier script/main.js
+### Fichier script.js
 
-Ce fichier permet 
+Avant d'utiliser un Service Worker, il faut le faire enregistrer par l'application. On enregistre généralement le Service Worker au chargement de la page. Dans le fichier `scripts.js`, complétez la fonction appelée au chargement du document avec le code suivant : 
+
+
+```js
+
+ if ('serviceWorker'  in  navigator){
+
+window.addEventListener('load', () => {
+
+navigator.serviceWorker.register("./sw.js")
+
+.then(registration  => {
+
+console.log(registration)
+
+console.log(
+
+'Service Worker enregistré',
+
+registration.scope
+
+)
+
+})
+
+.catch( Error  =>  console.log('registro de service worker fallido', Error))
+
+})
+
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbOTMwNzY3NzkxLC0xNzI2ODExNTgxLDMyMj
+MwMDEyOV19
 -->
