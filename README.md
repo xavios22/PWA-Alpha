@@ -103,28 +103,16 @@ Avant d'utiliser un Service Worker, il faut le faire enregistrer par l'applicati
  if ('serviceWorker'  in  navigator){
 	window.addEventListener('load', () => {
 		navigator.serviceWorker.register("./sw.js")
-
-.then(registration  => {
-
-console.log(registration)
-
-console.log(
-
-'Service Worker enregistré',
-
-registration.scope
-
-)
-
-})
-
-.catch( Error  =>  console.log('registro de service worker fallido', Error))
-
-})
-
+		then(registration  => {
+			console.log(registration)
+			console.log('Service Worker enregistré',registration.scope)
+	})
+	.catch( Error  =>  console.log('registro de service worker fallido',Error))
+	})
 }
 ```
+Rechargez la page, le log suivant devrait apparaitre une fois la page chargée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU0Mjk0NTIsLTE3MjY4MTE1ODEsMz
-IyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbLTkwODYxMDM5OCwtMTcyNjgxMTU4MSwzMj
+IzMDAxMjldfQ==
 -->
