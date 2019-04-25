@@ -93,7 +93,9 @@ Safari se sert principalement des balises pour pallier sa “discutable” gesti
 
 ![enter image description here](https://lh3.googleusercontent.com/KxlLmQK_2T-Oo1rSMKCq9IWAWvdqEtImdAiAh48l6uSlAiwsZh0SdUK6o-q_cQvoLlBVSO_WohYb)
 
+### Fichier script/main.js
 
+Ce fichier permet 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
 -->
