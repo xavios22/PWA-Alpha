@@ -116,7 +116,10 @@ Rechargez la page, le log suivant devrait apparaitre une fois la page chargée.
 ![enter image description here](https://lh3.googleusercontent.com/ukf-mNAuSYdhEGpi6T4p0ydeZ-o9uz1P9HLzjfok6lk-ctzl4BmyQNVq8L_OBnBIopoMO7UyXSYn)
 
 Cela signifie que le Service Worker a bien été enregistré. On peut vérifier cela en regardant dans l'onglet **Application** des Chrome Developer Tools, puis dans la sous-section **Service Workers**.
+
+![enter image description here](https://lh3.googleusercontent.com/gpQ-T7acOkCEArmTdHkuCcr0PDF6mLxFsy8y1byKSzq0wr0XsYqpHggiobC528YjuuhlyC3CruKT)  
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxNzE0NTg5LC0xNzI2ODExNTgxLDMyMj
-MwMDEyOV19
+eyJoaXN0b3J5IjpbMTk0ODMzODEyNywtMTcyNjgxMTU4MSwzMj
+IzMDAxMjldfQ==
 -->
