@@ -80,7 +80,7 @@ Safari se sert principalement des balises pour pallier sa “discutable” gesti
 
 ##### La creation d'un fichier  manifest.json se fait  à la racine de notre projet,   de dans on a besoin juste des information ci dessous  et importer le link dans notre index.html
 
-    <link  rel="manifest"  href="./manifest.json">
+   ```html  <link  rel="manifest"  href="./manifest.json">```
 
 
 ## 2. Création d'un fichier sw.js
@@ -93,7 +93,33 @@ Safari se sert principalement des balises pour pallier sa “discutable” gesti
 
 ![enter image description here](https://lh3.googleusercontent.com/KxlLmQK_2T-Oo1rSMKCq9IWAWvdqEtImdAiAh48l6uSlAiwsZh0SdUK6o-q_cQvoLlBVSO_WohYb)
 
+### Fichier script.js
+
+Avant d'utiliser un Service Worker, il faut le faire enregistrer par l'application. On enregistre généralement le Service Worker au chargement de la page. Dans le fichier `scripts.js`, complétez la fonction appelée au chargement du document avec le code suivant : 
+
+
+```js
+
+ if ('serviceWorker'  in  navigator){
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register("./sw.js")
+		then(registration  => {
+			console.log(registration)
+			console.log('Service Worker enregistré',registration.scope)
+	})
+	.catch( Error  =>  console.log('registro de service worker fallido',Error))
+	})
+}
+```
+Rechargez la page, le log suivant devrait apparaitre une fois la page chargée.
+
+![enter image description here](https://lh3.googleusercontent.com/ukf-mNAuSYdhEGpi6T4p0ydeZ-o9uz1P9HLzjfok6lk-ctzl4BmyQNVq8L_OBnBIopoMO7UyXSYn)
+
+Cela signifie que le Service Worker a bien été enregistré. On peut vérifier cela en regardant dans l'onglet **Application** des Chrome Developer Tools, puis dans la sous-section **Service Workers**.
+
+![enter image description here](https://lh3.googleusercontent.com/gpQ-T7acOkCEArmTdHkuCcr0PDF6mLxFsy8y1byKSzq0wr0XsYqpHggiobC528YjuuhlyC3CruKT)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbMTk0ODMzODEyNywtMTcyNjgxMTU4MSwzMj
+IzMDAxMjldfQ==
 -->
