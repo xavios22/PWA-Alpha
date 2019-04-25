@@ -112,7 +112,8 @@ Avant d'utiliser un Service Worker, il faut le faire enregistrer par l'applicati
 }
 ```
 Rechargez la page, le log suivant devrait apparaitre une fois la page chargée.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODYxMDM5OCwtMTcyNjgxMTU4MSwzMj
-IzMDAxMjldfQ==
+eyJoaXN0b3J5IjpbNzM3MzU0MzIwLC0xNzI2ODExNTgxLDMyMj
+MwMDEyOV19
 -->
