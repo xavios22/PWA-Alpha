@@ -2,7 +2,7 @@
     "name": "Xavier PWA Test",
     "short-name": "Xavier PWA",
     "desription": "Test d'une application PWA",
-    "background_color": "#F7DF1E",
+    "backgroundcolor": "#F7DF1E",
     "theme_color": "#000",
     "orientation": "portrait",
     "display": "standalone",
