@@ -123,7 +123,10 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 
 ![enter image description here](https://lh3.googleusercontent.com/gpQ-T7acOkCEArmTdHkuCcr0PDF6mLxFsy8y1byKSzq0wr0XsYqpHggiobC528YjuuhlyC3CruKT)  
 
+### Cycle de vie du Service Worker
+
+Cycle de vie du Service Worker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjYzNDI5MSwxOTQ4MzM4MTI3LC0xNz
-I2ODExNTgxLDMyMjMwMDEyOV19
+eyJoaXN0b3J5IjpbNDU5Nzc3ODE0LDE0MzI2MzQyOTEsMTk0OD
+MzODEyNywtMTcyNjgxMTU4MSwzMjIzMDAxMjldfQ==
 -->
