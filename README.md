@@ -28,32 +28,52 @@ Voici un exemple
 #### Voici  un exemple d'un fichier manifest.json:
 
 
-    {  
-      "short_name": "WAM",  
-      "name": "Web App Manifest",  
-      "theme_color": "#eb5252",  
-      "background_color": "#000000",  
-      "display": "fullscreen",  
-      "Scope": "/",  
-      "orientation": "portrait",  
-      "icons": [  
-        {  
-          "src": "images/android/android-launchericon-48-48.png",  
-          "type": "image/png",  
-          "sizes": "48x48"  
-        },  
-        {  
-          "src": "images/android/android-launchericon-96-96.png",  
-          "type": "image/png",  
-          "sizes": "96x96"  
-        },  
-        {  
-          "src": "images/android/android-launchericon-192-192.png",  
-          "type": "image/png",  
-          "sizes": "192x192"  
-        }  
-      ],  
-      "start_url": "index.html?utm_source=homescreen"  
+   
+
+     {
+    
+	    "name": "Xavier PWA Test",
+	    "short-name": "Xavier PWA",
+	    "desription": "Test d'une application PWA",
+	    "backgroundcolor": "#F7DF1E",
+	    "theme_color": "#000",
+	    "orientation": "portrait",
+	    "display": "standalone",
+	    "start_url": "./?utm=homescreen",
+	    "scope": "./",
+	    "icons" : [
+	    {
+    
+    "src": "./images/iconos/icon_32x32.png",
+    
+    "sizes": "32x32",
+    
+    "type": "image/png"
+    
+    },
+    
+    {
+    
+    "src": "./images/iconos/icon_64x64.png",
+    
+    "sizes": "64x64",
+    
+    "type": "image/png"
+    
+    },
+    
+    {
+    
+    "src": "./images/iconos/icon_512x512.png",
+    
+    "sizes": "512x512",
+    
+    "type": "image/png"
+    
+    }
+    
+    ]
+    
     }
 
 
@@ -120,6 +140,6 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 ![enter image description here](https://lh3.googleusercontent.com/gpQ-T7acOkCEArmTdHkuCcr0PDF6mLxFsy8y1byKSzq0wr0XsYqpHggiobC528YjuuhlyC3CruKT)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODMzODEyNywtMTcyNjgxMTU4MSwzMj
-IzMDAxMjldfQ==
+eyJoaXN0b3J5IjpbMTI1MTI1MTYwNywxOTQ4MzM4MTI3LC0xNz
+I2ODExNTgxLDMyMjMwMDEyOV19
 -->
