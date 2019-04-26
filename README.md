@@ -125,8 +125,8 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 
 ### Cycle de vie du Service Worker
 
-Cycle de vie du Service Worker
+Quand on enregistre un Service Worker, son cycle de vie démarre.Le schéma suivant représente les différentes étapes du cycle de vie d'un Service Worke
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5Nzc3ODE0LDE0MzI2MzQyOTEsMTk0OD
+eyJoaXN0b3J5IjpbNjIyOTM2MTMxLDE0MzI2MzQyOTEsMTk0OD
 MzODEyNywtMTcyNjgxMTU4MSwzMjIzMDAxMjldfQ==
 -->
