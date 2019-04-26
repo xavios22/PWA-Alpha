@@ -151,8 +151,10 @@ console.log('Event:Service Workers Activé')
 
 Rechargez la page et vérifier les logs. Curieusement, on ne voit que le log d'installation.
 
+![enter image description here](https://lh3.googleusercontent.com/Oy1NmTBMPpaLAd3yArlrO9FRTyggVqStKq39a85nT7hH_uY2xHBBz0eoB7rTpjcJa3YxIbZm-iHr)
 
+Regardons ce qui se passe dans la section Service Worker des Dev Tools. Un affichage similaire à la capture suivante devrait apparaitre:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODU1MDY3MDEsMTQzMjYzNDI5MSwxOT
+eyJoaXN0b3J5IjpbLTEwMzUxNTkyMzYsMTQzMjYzNDI5MSwxOT
 Q4MzM4MTI3LC0xNzI2ODExNTgxLDMyMjMwMDEyOV19
 -->
