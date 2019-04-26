@@ -125,8 +125,13 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 
 ### Cycle de vie du Service Worker
 
-Quand on enregistre un Service Worker, son cycle de vie démarre.Le schéma suivant représente les différentes étapes du cycle de vie d'un Service Worke
+Quand on enregistre un Service Worker, son cycle de vie démarre.Le schéma suivant représente les différentes étapes du cycle de vie d'un Service Workers 
+![enter image description here](https://lh3.googleusercontent.com/D9KDGYH24FZlm-Kav-NKjIZK2jCFbkrEcxOsPr5DbhefME-CCVLDoC4KOK22oFThvhM5dEbVWlK_)
+
+
+## Fichier 
+#####  Les premières étapes sont l'installation et l'activation. Vérifions cela en ajoutant le code suivant dans le fichier _sw.js_.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyOTM2MTMxLDE0MzI2MzQyOTEsMTk0OD
+eyJoaXN0b3J5IjpbMzkwNDc2ODc3LDE0MzI2MzQyOTEsMTk0OD
 MzODEyNywtMTcyNjgxMTU4MSwzMjIzMDAxMjldfQ==
 -->
