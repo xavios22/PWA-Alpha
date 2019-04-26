@@ -155,8 +155,8 @@ Rechargez la page et vérifier les logs. Curieusement, on ne voit que le log d'i
 
 Regardons ce qui se passe dans la section Service Worker des Dev Tools. Un affichage similaire à la capture suivante devrait apparaitre:
 
-
+![enter image description here](https://lh3.googleusercontent.com/LJd-uE8ars_qSg6RcZ2O-_D97-htm2wgboGxS7a8joymy36ewYoBJMr4c8A8DtKgp4PkSskKmAnB)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzE1NjI0OCwxNDMyNjM0MjkxLDE5ND
-gzMzgxMjcsLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbMzg2NzM2ODQ3LDE0MzI2MzQyOTEsMTk0OD
+MzODEyNywtMTcyNjgxMTU4MSwzMjIzMDAxMjldfQ==
 -->
