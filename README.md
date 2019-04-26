@@ -28,33 +28,37 @@ Voici un exemple
 #### Voici  un exemple d'un fichier manifest.json:
 
 
-    {  
-      "short_name": "WAM",  
-      "name": "Web App Manifest",  
-      "theme_color": "#eb5252",  
-      "background_color": "#000000",  
-      "display": "fullscreen",  
-      "Scope": "/",  
-      "orientation": "portrait",  
-      "icons": [  
-        {  
-          "src": "images/android/android-launchericon-48-48.png",  
-          "type": "image/png",  
-          "sizes": "48x48"  
-        },  
-        {  
-          "src": "images/android/android-launchericon-96-96.png",  
-          "type": "image/png",  
-          "sizes": "96x96"  
-        },  
-        {  
-          "src": "images/android/android-launchericon-192-192.png",  
-          "type": "image/png",  
-          "sizes": "192x192"  
-        }  
-      ],  
-      "start_url": "index.html?utm_source=homescreen"  
-    }
+   
+
+     {
+    
+	    "name": "Xavier PWA Test",
+	    "short-name": "Xavier PWA",
+	    "desription": "Test d'une application PWA",
+	    "backgroundcolor": "#F7DF1E",
+	    "theme_color": "#000",
+	    "orientation": "portrait",
+	    "display": "standalone",
+	    "start_url": "./?utm=homescreen",
+	    "scope": "./",
+	    "icons" : [
+		    {
+			    "src": "./images/iconos/icon_32x32.png",
+			    "sizes": "32x32",
+			    "type": "image/png"
+			},
+		    {
+				"src": "./images/iconos/icon_64x64.png",
+				"sizes": "64x64",
+				"type": "image/png"
+		    },
+		    {
+			    "src": "./images/iconos/icon_512x512.png",
+				"sizes": "512x512",
+				"type": "image/png"
+			}
+		 ]
+	}
 
 
 #### Plus de personnalisation
@@ -119,7 +123,47 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 
 ![enter image description here](https://lh3.googleusercontent.com/gpQ-T7acOkCEArmTdHkuCcr0PDF6mLxFsy8y1byKSzq0wr0XsYqpHggiobC528YjuuhlyC3CruKT)  
 
+### Cycle de vie du Service Worker
+
+Quand on enregistre un Service Worker, son cycle de vie démarre.Le schéma suivant représente les différentes étapes du cycle de vie d'un Service Workers 
+
+
+
+![enter image description here](https://lh3.googleusercontent.com/D9KDGYH24FZlm-Kav-NKjIZK2jCFbkrEcxOsPr5DbhefME-CCVLDoC4KOK22oFThvhM5dEbVWlK_)
+
+
+### Fichier sw.js 
+ Les premières étapes sont l'installation et l'activation. Vérifions cela en ajoutant le code suivant dans le fichier _sw.js_.
+ 
+ ```js 
+self.addEventListener('install', event  =>{
+
+console.log('Event: Service Workers Installé')
+
+})
+
+self.addEventListener('active', event  => {
+
+console.log('Event:Service Workers Activé')
+
+})  
+```
+
+Rechargez la page et vérifier les logs. Curieusement, on ne voit que le log d'installation.
+
+![enter image description here](https://lh3.googleusercontent.com/Oy1NmTBMPpaLAd3yArlrO9FRTyggVqStKq39a85nT7hH_uY2xHBBz0eoB7rTpjcJa3YxIbZm-iHr)
+
+Regardons ce qui se passe dans la section Service Worker des Dev Tools. Un affichage similaire à la capture suivante devrait apparaitre:
+
+![enter image description here](https://lh3.googleusercontent.com/LJd-uE8ars_qSg6RcZ2O-_D97-htm2wgboGxS7a8joymy36ewYoBJMr4c8A8DtKgp4PkSskKmAnB)
+
+Quand on rafraîchit la page, le navigateur essaie d'installer puis d'activer le Service Worker avec le nouveau code. Comme ce dernier est différent du Service Worker actif, celui enregistré au début de l'étape 2, l'activation du nouveau Service Worker est suspendue. Dans ce cas, il est mis en attente et ne sera installé que si le précédent Service Worker ne contrôle plus aucun client.
+
+Cliquez sur le lien  **skipWaiting**. On remarque que l'ancien Service Worker a disparu et que celui qui était en attente prend sa place. Le log d'activation s'affiche également.
+
+
+![enter image description here](https://lh3.googleusercontent.com/eV_ZALSCGFcRFbG-UYp_iakmXxip04zRk_Mz-sD3wYH1-mqyD2vaxfvAoQPsjvJjagoQ488zEEAl)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODMzODEyNywtMTcyNjgxMTU4MSwzMj
-IzMDAxMjldfQ==
+eyJoaXN0b3J5IjpbMTQzNjcxNTYyNSwxNDMyNjM0MjkxLDE5ND
+gzMzgxMjcsLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
 -->
