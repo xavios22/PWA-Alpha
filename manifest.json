@@ -1,13 +1,15 @@
 {
     "name": "Xavier PWA Test",
-    "short-name": "Xavier PWA",
-    "desription": "Test d'une application PWA",
-    "backgroundcolor": "#F7DF1E",
+    "short_name": "Xavier PWA",
+    "description": "Test d'une application PWA",
+    "background_color": "#F7DF1E",
     "theme_color": "#000",
     "orientation": "portrait",
     "display": "standalone",
+    "start_url": "./?utm=homescreen",
     "scope": "./",
-    "icons" : [
+    "lang": "fr",
+    "icons": [
         {
             "src": "./images/iconos/icon_32x32.png",
             "sizes": "32x32",
