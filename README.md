@@ -160,8 +160,8 @@ Regardons ce qui se passe dans la section Service Worker des Dev Tools. Un affic
 Quand on rafraîchit la page, le navigateur essaie d'installer puis d'activer le Service Worker avec le nouveau code. Comme ce dernier est différent du Service Worker actif, celui enregistré au début de l'étape 2, l'activation du nouveau Service Worker est suspendue. Dans ce cas, il est mis en attente et ne sera installé que si le précédent Service Worker ne contrôle plus aucun client.
 
 Cliquez sur le lien  **skipWaiting**. On remarque que l'ancien Service Worker a disparu et que celui qui était en attente prend sa place. Le log d'activation s'affiche également.
-
+![enter image description here](https://lh3.googleusercontent.com/eV_ZALSCGFcRFbG-UYp_iakmXxip04zRk_Mz-sD3wYH1-mqyD2vaxfvAoQPsjvJjagoQ488zEEAl)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5MjYzNjg1LDE0MzI2MzQyOTEsMTk0OD
-MzODEyNywtMTcyNjgxMTU4MSwzMjIzMDAxMjldfQ==
+eyJoaXN0b3J5IjpbLTIwMzkyMjMyMjcsMTQzMjYzNDI5MSwxOT
+Q4MzM4MTI3LC0xNzI2ODExNTgxLDMyMjMwMDEyOV19
 -->
