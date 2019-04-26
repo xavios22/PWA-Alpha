@@ -126,13 +126,17 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 ### Cycle de vie du Service Worker
 
 Quand on enregistre un Service Worker, son cycle de vie démarre.Le schéma suivant représente les différentes étapes du cycle de vie d'un Service Workers 
+
+
+
 ![enter image description here](https://lh3.googleusercontent.com/D9KDGYH24FZlm-Kav-NKjIZK2jCFbkrEcxOsPr5DbhefME-CCVLDoC4KOK22oFThvhM5dEbVWlK_)
 
 
 ### Fichier sw.js 
  Les premières étapes sont l'installation et l'activation. Vérifions cela en ajoutant le code suivant dans le fichier _sw.js_.
  
- ```js self.addEventListener('install', event  =>{
+ ```js 
+self.addEventListener('install', event  =>{
 
 console.log('Event: Service Workers Installé')
 
@@ -142,9 +146,8 @@ self.addEventListener('active', event  => {
 
 console.log('Event:Service Workers Activé')
 
-}) `` 
-
+})  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NzYwNDQsMTQzMjYzNDI5MSwxOTQ4Mz
-M4MTI3LC0xNzI2ODExNTgxLDMyMjMwMDEyOV19
+eyJoaXN0b3J5IjpbLTU3NDQ5NTYyMiwxNDMyNjM0MjkxLDE5ND
+gzMzgxMjcsLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
 -->
