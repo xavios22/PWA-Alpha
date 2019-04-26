@@ -129,9 +129,22 @@ Quand on enregistre un Service Worker, son cycle de vie démarre.Le schéma suiv
 ![enter image description here](https://lh3.googleusercontent.com/D9KDGYH24FZlm-Kav-NKjIZK2jCFbkrEcxOsPr5DbhefME-CCVLDoC4KOK22oFThvhM5dEbVWlK_)
 
 
-## Fichier 
-#####  Les premières étapes sont l'installation et l'activation. Vérifions cela en ajoutant le code suivant dans le fichier _sw.js_.
+### Fichier sw.js 
+ Les premières étapes sont l'installation et l'activation. Vérifions cela en ajoutant le code suivant dans le fichier _sw.js_.
+ 
+ ```js self.addEventListener('install', event  =>{
+
+console.log('Event: Service Workers Installé')
+
+})
+
+self.addEventListener('active', event  => {
+
+console.log('Event:Service Workers Activé')
+
+}) `` 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkwNDc2ODc3LDE0MzI2MzQyOTEsMTk0OD
-MzODEyNywtMTcyNjgxMTU4MSwzMjIzMDAxMjldfQ==
+eyJoaXN0b3J5IjpbMzk0NzYwNDQsMTQzMjYzNDI5MSwxOTQ4Mz
+M4MTI3LC0xNzI2ODExNTgxLDMyMjMwMDEyOV19
 -->
