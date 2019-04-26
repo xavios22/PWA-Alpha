@@ -148,7 +148,11 @@ console.log('Event:Service Workers Activé')
 
 })  
 ```
+
+Rechargez la page et vérifier les logs. Curieusement, on ne voit que le log d'installation.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjY3NTk4NjAsMTQzMjYzNDI5MSwxOT
+eyJoaXN0b3J5IjpbLTEyODU1MDY3MDEsMTQzMjYzNDI5MSwxOT
 Q4MzM4MTI3LC0xNzI2ODExNTgxLDMyMjMwMDEyOV19
 -->
