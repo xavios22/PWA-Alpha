@@ -42,23 +42,23 @@ Voici un exemple
 	    "start_url": "./?utm=homescreen",
 	    "scope": "./",
 	    "icons" : [
-	    {
-		    "src": "./images/iconos/icon_32x32.png",
-		    "sizes": "32x32",
-		    "type": "image/png"
-		},
-	    {
-			"src": "./images/iconos/icon_64x64.png",
-			"sizes": "64x64",
-			"type": "image/png"
-	    },
-	    {
-		    "src": "./images/iconos/icon_512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	    ]
-}
+		    {
+			    "src": "./images/iconos/icon_32x32.png",
+			    "sizes": "32x32",
+			    "type": "image/png"
+			},
+		    {
+				"src": "./images/iconos/icon_64x64.png",
+				"sizes": "64x64",
+				"type": "image/png"
+		    },
+		    {
+			    "src": "./images/iconos/icon_512x512.png",
+				"sizes": "512x512",
+				"type": "image/png"
+			}
+		 ]
+	}
 
 
 #### Plus de personnalisation
@@ -124,6 +124,6 @@ Cela signifie que le Service Worker a bien été enregistré. On peut vérifier 
 ![enter image description here](https://lh3.googleusercontent.com/gpQ-T7acOkCEArmTdHkuCcr0PDF6mLxFsy8y1byKSzq0wr0XsYqpHggiobC528YjuuhlyC3CruKT)  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDM3OTYzNSwxOTQ4MzM4MTI3LC0xNz
+eyJoaXN0b3J5IjpbMTQzMjYzNDI5MSwxOTQ4MzM4MTI3LC0xNz
 I2ODExNTgxLDMyMjMwMDEyOV19
 -->
