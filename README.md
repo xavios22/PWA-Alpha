@@ -147,7 +147,8 @@ self.addEventListener('active', event  => {
 console.log('Event:Service Workers Activé')
 
 })  
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDQ5NTYyMiwxNDMyNjM0MjkxLDE5ND
-gzMzgxMjcsLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbLTEzNjY3NTk4NjAsMTQzMjYzNDI5MSwxOT
+Q4MzM4MTI3LC0xNzI2ODExNTgxLDMyMjMwMDEyOV19
 -->
