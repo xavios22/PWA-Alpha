@@ -163,7 +163,10 @@ Cliquez sur le lien  **skipWaiting**. On remarque que l'ancien Service Worker a 
 
 
 ![enter image description here](https://lh3.googleusercontent.com/eV_ZALSCGFcRFbG-UYp_iakmXxip04zRk_Mz-sD3wYH1-mqyD2vaxfvAoQPsjvJjagoQ488zEEAl)
+
+github 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjcxNTYyNSwxNDMyNjM0MjkxLDE5ND
-gzMzgxMjcsLTE3MjY4MTE1ODEsMzIyMzAwMTI5XX0=
+eyJoaXN0b3J5IjpbLTE4MDkzMDI1NDIsMTQzNjcxNTYyNSwxND
+MyNjM0MjkxLDE5NDgzMzgxMjcsLTE3MjY4MTE1ODEsMzIyMzAw
+MTI5XX0=
 -->
