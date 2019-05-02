@@ -53,36 +53,36 @@ self.addEventListener('install', Event => {
       )
   })
   
-  // self.addEventListener('push', e => {
-  //   console.log('Evento: Push')
+  self.addEventListener('push', e => {
+    console.log('Evento: Push')
   
-  //   let title = 'Push Notificación Demo',
-  //     options = {
-  //       body: 'Click para regresar a la aplicación',
-  //       icon: './img/icon_192x192.png',
-  //       vibrate: [100, 50, 100],
-  //       data: { id: 1 },
-  //       actions: [
-  //         { 'action': 'Si', 'title': 'Amo esta aplicación :)', icon: './img/icon_192x192.png' },
-  //         { 'action': 'No', 'title': 'No me gusta esta aplicación :(', icon: './img/icon_192x192.png' }
-  //       ]
-  //     }
+    let title = 'Push Notificación Demo',
+      options = {
+        body: 'Click para regresar a la aplicación',
+        icon: './images/iconos/icon_64x64.png',
+        vibrate: [100, 50, 100],
+        data: { id: 1 },
+        actions: [
+          { 'action': 'Si', 'title': 'Amo esta aplicación :)', icon: './images/iconos/icon_64x64.png' },
+          { 'action': 'No', 'title': 'No me gusta esta aplicación :(', icon: './images/iconos/icon_64x64.png' }
+        ]
+      }
   
-  //     e.waitUntil( self.registration.showNotification(title, options) )
-  // })
+      e.waitUntil( self.registration.showNotification(title, options) )
+  })
   
-  // self.addEventListener('notificationclick', e => {
-  //   console.log(e)
+  self.addEventListener('notificationclick', e => {
+    console.log(e)
   
-  //   if ( e.action === 'Si' ) {
-  //     console.log('AMO esta aplicación')
-  //     clients.openWindow('https://ed.team')
-  //   } else if ( e.action === 'No' ) {
-  //     console.log('No me gusta esta aplicación')
-  //   }
+    if ( e.action === 'Si' ) {
+      console.log('AMO esta aplicación')
+      clients.openWindow('https://ed.team')
+    } else if ( e.action === 'No' ) {
+      console.log('No me gusta esta aplicación')
+    }
   
-  //   e.notification.close()
-  // })
+    e.notification.close()
+  })
   
   // self.addEventListener('sync', e => {
   //   console.log('Evento: Sincronización de Fondo', e)
