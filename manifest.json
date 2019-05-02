@@ -6,7 +6,7 @@
     "theme_color": "#000",
     "orientation": "portrait",
     "display": "standalone",
-    "start_url": "./?utm=homescreen",
+    "start_url": "./?utm_source=web_app_manifest",
     "scope": "./",
     "lang": "fr",
     "icons": [
