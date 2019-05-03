@@ -19,11 +19,7 @@
             "src": "./images/iconos/icon_64x64.png",
             "sizes": "64x64",
             "type": "image/png"
-        },
-        {
-            "src": "./images/iconos/icon_512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
         }
+        
     ]
 }

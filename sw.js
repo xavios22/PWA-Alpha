@@ -56,15 +56,15 @@ self.addEventListener('install', Event => {
   self.addEventListener('push', e => {
     console.log('Evento: Push')
   
-    let title = 'Push Notificación Demo',
+    let title = 'Notification Demo',
       options = {
-        body: 'Click para regresar a la aplicación',
+        body: 'Notification push ',
         icon: './images/iconos/icon_64x64.png',
         vibrate: [100, 50, 100],
         data: { id: 1 },
         actions: [
-          { 'action': 'Si', 'title': 'Amo esta aplicación :)', icon: './images/iconos/icon_64x64.png' },
-          { 'action': 'No', 'title': 'No me gusta esta aplicación :(', icon: './images/iconos/icon_64x64.png' }
+          { 'action': 'Si', 'title': 'Ouvrir Notification ', icon: './images/iconos/icon_64x64.png' },
+          { 'action': 'No', 'title': 'Fermer Notification', icon: './images/iconos/icon_64x64.png' }
         ]
       }
   
@@ -75,10 +75,10 @@ self.addEventListener('install', Event => {
     console.log(e)
   
     if ( e.action === 'Si' ) {
-      console.log('AMO esta aplicación')
-      clients.openWindow('https://ed.team')
+      console.log('Ouvrir Notification ')
+      clients.openWindow('https://github.com/xavios22/PWA-Alpha')
     } else if ( e.action === 'No' ) {
-      console.log('No me gusta esta aplicación')
+      console.log('Fermer Notification')
     }
   
     e.notification.close()
