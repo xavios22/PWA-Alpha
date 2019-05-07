@@ -84,23 +84,23 @@ self.addEventListener('install', Event => {
     e.notification.close()
   })
   
-  // self.addEventListener('sync', e => {
-  //   console.log('Evento: Sincronización de Fondo', e)
+  self.addEventListener('sync', e => {
+    console.log('Evento: Sincronización de Fondo', e)
   
-  //   //Revisamos que la etiqueta de sincronización sea la que definimos o la que emulan las devtools
-  //   if ( e.tag === 'github' || e.tag === 'test-tag-from-devtools' ) {
-  //     e.waitUntil(
-  //       //Comprobamos todas las pestañas abiertas y les enviamos postMessage
-  //       self.clients.matchAll()
-  //         .then(all => {
-  //           return all.map(client => {
-  //             return client.postMessage('online')
-  //           })
-  //         })
-  //         .catch( err => console.log(err) )
-  //     )
-  //   }
-  // })
+    //Revisamos que la etiqueta de sincronización sea la que definimos o la que emulan las devtools
+    if ( e.tag === 'github' || e.tag === 'test-tag-from-devtools' ) {
+      e.waitUntil(
+        //Comprobamos todas las pestañas abiertas y les enviamos postMessage
+        self.clients.matchAll()
+          .then(all => {
+            return all.map(client => {
+              return client.postMessage('online')
+            })
+          })
+          .catch( err => console.log(err) )
+      )
+    }
+  })
   
   // self.addEventListener('fetch', e => {
   //   console.log('Event: SW Recupéré')
